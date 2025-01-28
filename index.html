@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,16 +52,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Asimov_0.1.2.loader.js";
+      var loaderUrl = buildUrl + "/Asimov_0.1.5.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Asimov_0.1.2.data.unityweb",
-        frameworkUrl: buildUrl + "/Asimov_0.1.2.framework.js.unityweb",
-        codeUrl: buildUrl + "/Asimov_0.1.2.wasm.unityweb",
+        dataUrl: buildUrl + "/Asimov_0.1.5.data.unityweb",
+        frameworkUrl: buildUrl + "/Asimov_0.1.5.framework.js.unityweb",
+        codeUrl: buildUrl + "/Asimov_0.1.5.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Palette",
         productName: "Asimov_Prototype",
-        productVersion: "0.1.0",
+        productVersion: "0.1.5",
         showBanner: unityShowBanner,
       };
 
@@ -98,8 +98,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
